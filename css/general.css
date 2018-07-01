@@ -1,7 +1,14 @@
 body{
-	color: #444444;
-	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-	font-size: 12px;
+	color: #444444!important;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif!important;
+	font-size: 12px!important;
+}
+a{
+	color: inherit!important;
+}
+a:hover{
+	text-decoration: none!important;
+	opacity: .8;
 }
 .mobile-menu,
 .responsive-menu{
@@ -30,7 +37,7 @@ body{
 .inline-block{
 	display: inline-block;
 }
-.hard-shadowed {
+.hard-shadowed{
 	text-shadow: 0 6px 6px rgba(0, 0, 0, 0.8);
 }
 
@@ -221,10 +228,10 @@ footer ul{
 	font-size: 14px;
 }
 
-.footer-content {
+.footer-content{
 	padding: 80px 0;
 }
-.footer-logo {
+.footer-logo{
 	max-height: 60px;
 	width: auto;
 	display: inline-block;
@@ -256,6 +263,9 @@ footer ul{
 	color: #969696;
 	text-decoration: underline;
 }
+.subfooter a:hover{
+	text-decoration: underline!important;
+}
 
 
 /* FOOTER RESPONSIVE */
@@ -264,7 +274,7 @@ footer ul{
 		display: none;
 	}
 
-	.footer-content {
+	.footer-content{
 		padding: 40px 0;
 	}
 	.footer-content .footer-logo{

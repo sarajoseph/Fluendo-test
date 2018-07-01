@@ -1,0 +1,94 @@
+body{
+	color: #444444!important;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif!important;
+	font-size: 12px!important;
+	background-color: #FFFFFF!important;
+}
+
+main{
+	padding: 100px 20px;
+	max-width: 600px;
+	margin: auto;
+}
+
+.register-section .logo-form{
+	text-align: center;
+	padding-bottom: 10px;
+}
+.register-section .logo-form img{
+	max-height: 60px;
+}
+.register-section .form-title{
+	text-align: center;
+	padding: 40px 0 30px;
+	font-weight: bold;
+	font-size: 30px;
+}
+.register-section .register-form{
+	max-width: 500px;
+	margin: auto;
+	font-size: 12px;
+}
+.register-form .form-group{
+	margin-bottom: 20px;
+	float: left;
+	width: 100%;
+}
+.register-form label{
+	float: left;
+	width: 30%;
+	text-align: right;
+	padding-right: 20px;
+	font-weight: bold;
+	margin-bottom: 0;
+  line-height: 28px;
+}
+.register-form .input-text{
+	background-color: #e6e6e6;
+	float: right;
+	width: 70%;
+	text-align: left;
+	border: none;
+	border-radius: 20px;
+	padding: 5px 10px;
+}
+.register-form .btn-container{
+	text-align: center;
+	margin-top: 20px;
+}
+.register-form .btn-container .btn{
+	background-color: #728129;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	padding: 6px 40px;
+}
+
+
+
+@media only screen and (max-width: 768px){
+
+	.register-form label{
+		float: left;
+		width: 100%;
+		text-align: left;
+	}
+	.register-form .input-text{
+		float: left;
+		width: 100%;
+		text-align: left;
+	}
+
+
+}
+
+
+/* VALIDATION */
+label.error{
+	width: 100%!important;
+	color: #ff0000;
+}
+input.error{
+	border: 1px solid #ff0000!important;
+}
