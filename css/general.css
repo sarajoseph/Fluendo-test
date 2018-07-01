@@ -1,5 +1,7 @@
-*{
-	
+body{
+	color: #444444;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 12px;
 }
 .mobile-menu,
 .responsive-menu{
@@ -28,6 +30,9 @@
 .inline-block{
 	display: inline-block;
 }
+.hard-shadowed {
+	text-shadow: 0 6px 6px rgba(0, 0, 0, 0.8);
+}
 
 .container-fluid{padding: 0!important;}
 
@@ -35,7 +40,7 @@
 /* HEADER */
 .subheader{
 	background-color: #000000;
-	color: #bdbdbd;
+	color: #969696;
 	font-size: 14px;
 	padding: 10px 0;
 }
@@ -62,6 +67,7 @@
 	color: #656464;
 	font-size: 14px;
 	padding: 30px 0;
+	line-height: 30px;
 }
 .bodyheader .longomatch-logo{
 	max-height: 30px;
@@ -89,7 +95,7 @@
 .responsive-menu{
 	background-color: #262626;
 	color: #FFFFFF;
-	z-index: 1;
+	z-index: 9;
 	bottom: 0;
 	left: auto;
 	right: 0;
@@ -126,7 +132,7 @@
 	margin-right: 10px;
 }
 
-/* RESPONSIVE */
+/* HEADER RESPONSIVE */
 @media only screen and (max-width: 991px){
 	.subheader,
 	.bodyheader-right{
@@ -135,5 +141,151 @@
 	.mobile-menu,
 	.responsive-menu{
 		display: block;
+	}
+}
+
+
+
+/* HOME PARALLAX */
+.home-parallax-container{
+	background: url(../images/longomatch-slider-football.jpg) center bottom / cover no-repeat fixed;
+	height: calc(100vh - 108px);
+	overflow: hidden;
+	position: relative;
+}
+
+.home-parallax-text{
+	color: #FFFFFF;
+	position: absolute;
+	top: 30%;
+	z-index: 1;
+	width: 100%;
+}
+
+.home-parallax-text-title{
+	text-align: center;
+	padding: 0 20px;
+	color: #FFFFFF;
+	z-index: 0;
+	margin-bottom: 15px;
+	font-size: 53px;
+}
+.home-parallax-text-desc{
+	text-align: center;
+	padding: 0 20px;
+	color: #FFFFFF;
+	z-index: 0;
+	margin-bottom: 15px;
+	font-size: 18px;
+}
+.home-parallax-text-playvideo{
+	text-align: center;
+	padding: 0 20px;
+	color: #FFFFFF;
+	z-index: 0;
+	margin-top: 50px;
+	font-size: 18px;
+	height: 54px;
+}
+.home-parallax-text-playvideo .icon-play{
+	font-size: 30px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.home-parallax-text-playvideo .txt-watch{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+
+
+/* FOOTER */
+footer{
+	background-color: #2b2b2b;
+}
+footer ul{
+	margin: 0;
+}
+.top-bar-footer{
+	background-color: #0d0d0d;
+}
+.top-bar-footer-content{
+	padding: 10px 0;
+	width: 100%;
+}
+.top-bar-footer-content li{
+	text-transform: uppercase;
+	padding-right: 20px;
+	color: #969696;
+	font-size: 14px;
+}
+
+.footer-content {
+	padding: 80px 0;
+}
+.footer-logo {
+	max-height: 60px;
+	width: auto;
+	display: inline-block;
+}
+.footer-content ul{
+	padding: 0;
+	margin-left: 100px;
+	vertical-align: middle;
+	display: inline-block;
+}
+.footer-content li{
+	text-transform: uppercase;
+	padding-right: 20px;
+	color: #FFFFFF;
+	font-size: 14px;
+	display: inline-block;
+}
+
+.subfooter{
+	background-color: #2b2b2b;
+	min-height: 30px;
+	border-top: 1px solid #4d4d4d;
+	color: #969696;
+	text-align: center;
+	padding: 20px 0;
+	font-size: 12px;
+}
+.subfooter a{
+	color: #969696;
+	text-decoration: underline;
+}
+
+
+/* FOOTER RESPONSIVE */
+@media only screen and (max-width: 991px){
+	.top-bar-footer{
+		display: none;
+	}
+
+	.footer-content {
+		padding: 40px 0;
+	}
+	.footer-content .footer-logo{
+		text-align: center;
+		margin: auto;
+		display: block;
+	}
+	.footer-content ul{
+		display: block;
+		text-align: center;
+		margin: 0;
+		margin-top: 20px;
+	}
+	/*.footer-content li{
+		display: block;
+	}*/
+}
+
+@media only screen and (max-width: 768px){
+	.footer-content li{
+		display: block;
+		padding: 10px 0;
 	}
 }
